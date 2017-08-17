@@ -137,7 +137,7 @@ const SubMenu = createReactClass({
       parentMenu.menuItemInstance.clearMenuItemMouseLeaveTimer(true);
     }
     const openChanges = [];
-    if (props.openSubMenuOnMouseEnter) {
+    if (props.openSubMenuOnMouseEnter || props.forceOpenOnEnter) {
       openChanges.push({
         key,
         item,
